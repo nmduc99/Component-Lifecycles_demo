@@ -36,8 +36,9 @@ class Counter extends Component{
     componentWillUnmount(){
         console.log('Counter will unmount');
     }
+
     shouldComponentUpdate(nextProps, nextState){
-        if(this.state.count ===nextState.count){
+        if(this.state.count === nextState.count){
             return false;
         }
         return true;
